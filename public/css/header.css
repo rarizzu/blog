@@ -1,0 +1,33 @@
+.ui.right.rail {
+  width: 50%; }
+
+#leftContent {
+  width: 70%; }
+
+.main {
+  margin-top: 5em; }
+
+#blogTitle {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+
+.submissions {
+  display: inline; }
+
+#commentText {
+  padding: 0px 0px 15px 5px;
+  border: .25px solid black;
+  width: 50%;
+  text-align: left; }
+
+.commentGroup {
+  margin: 12px; }
+
+#mainHeader {
+  background-color: rgba(133, 188, 203, 0.3);
+  padding-left: 30px;
+  padding-right: 50px; }
+
+.ui.menu .item {
+  font-weight: bold;
+  font-size: 1.2em; }

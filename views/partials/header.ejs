@@ -1,0 +1,69 @@
+<html>
+<head>
+      <title> Travel Blog </title> 
+
+   
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.css">
+  <link rel="stylesheet" type="text/css" href="/css/header.css"> 
+<script>
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+
+</head>
+<div id="mainHeader">
+<div class="ui  secondary  menu">
+  <a class=" item" href="/blogs">
+    Home
+  </a>
+  <a class="item">
+    Travel Destinations
+  </a>
+  <a class="item">
+    Life Tips
+  </a>
+  <a class="item">
+    Forum
+  </a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+
+    <% if (!currentUser) { %>
+    <a class="ui item" href="/signup">
+      Sign up
+    </a>
+    <a class="ui item" href="/login">
+      Login
+    </a>
+
+    <% } %>
+    <% if (currentUser) { %>
+    <p class="ui item"> Logged is as <%=currentUser.username%> </p>
+    <a class="ui item" href="/logout">
+       Logout  
+    </a>
+    <% } %>
+  </div>
+</div>
+</div>
+
+
+
+<body>
+    
+
+
+
+
+
+
+
+
+
+

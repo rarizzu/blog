@@ -1,0 +1,35 @@
+.ui.right.rail {
+
+    width: 50%;
+   
+}
+
+#leftContent {
+    width:70%;
+}
+
+.main {
+    margin-top: 5em;
+}
+
+#blogTitle {
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+.submissions {
+    display: inline;
+}
+
+#commentText {
+
+padding: 0px 0px 15px 5px;
+border: .25px solid black;
+width: 50%;
+text-align:left;
+
+}
+
+.commentGroup {
+    margin: 12px;
+}

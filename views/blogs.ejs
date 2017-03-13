@@ -1,0 +1,58 @@
+<% include partials/header.ejs %>
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+
+
+  <div>
+  <% if (currentUser) { %>
+   <h4> Hello, <%=currentUser.username%>! </h4>
+  <% } %>
+  </div>
+
+
+<div class="ui container fluid" id="jumbo">
+   <a href="/blogs/new"> <h1>Post a new Blog </h1> </a>
+</div>
+
+
+  <div class="ui container main" id="main">
+   
+    <h2> Latest Blogs </h2>
+    <div class="ui segment" id="leftContent">
+  <div class="ui right dividing rail">
+    <div class="ui segment">
+      ound shank short ribs biltong, pork chop sirloin chuck alcatra picanha pork belly ball tip. Alcatra sausage ground round chuck. Ball tip landjaeger salami pork chop meatloaf picanha.
+Short ribs drumstick prosciutto, pork chop alcatra kevin tongue andouille leberkas chicken capicola ham hock beef. Tail flank kevin sausage doner. Salami pastrami filet mignon short loin, turkey brisket bacon porchetta pancetta ball tip beef ribs. Swine pork loin andouille shank ball tip, landjaeger t-bone biltong filet migno
+    </div>
+  </div>
+
+  <%blogs.forEach(function (blog) { %>  
+  <div class="ui internally celled grid">          
+    <div class="row">
+      <div class="ten wide column"> 
+        <h3> <%=blog.title%> </h3>
+        <img class="ui left floated image" src="<%=blog.image%>" class="ui small image">
+        <a href=" /blogs/<%=blog._id%>"> <button > Read More </button> </a>
+        <div class="ui divider"> </div>
+      </div>     
+    </div>
+  </div>
+
+
+    <% }); %>
+  
+  
+  
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+<% include partials/footer.ejs %>

@@ -1,0 +1,3 @@
+node-sass --include-path scss scss/main.scss   public/css/main.css
+node-sass --include-path scss scss/header.scss   public/css/header.css
+node-sass --include-path scss scss/login.scss   public/css/login.css
